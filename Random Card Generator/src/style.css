@@ -1,0 +1,74 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  position: abso;
+  text-align: center;
+  box-shadow: 10px 10px 40px 8px rgb(49, 48, 48);
+
+  .top-suit {
+    position: absolute;
+    top: -7px;
+    left: 24px;
+    font-size: 95px;
+  }
+
+  .number {
+    position: absolute;
+    top: 0px;
+    font-size: 85px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-suit {
+    position: absolute;
+    bottom: -7px;
+    right: 24px;
+    font-size: 95px;
+    transform: rotate(180deg);
+  }
+}
+
+#button {
+  font-size: 25px;
+  color: white;
+  top: 20px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+#width-input {
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+#height-input {
+  border-radius: 20px;
+}
+
+#doneButton {
+  border-radius: 20px;
+  position: absolute;
+  left: 710px;
+  background-color: black;
+  color: white;
+}
+#stopMusic {
+  font-size: 25px;
+  color: white;
+  top: 20px;
+  border-radius: 20px;
+  background-color: red;
+}

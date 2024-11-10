@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f3a7b16321.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Instagram Photo Feed with Bootstrap</title>
+</head>
+<body>
+
+
+<div class="container mt-2">
+
+<!-- Navbar with logo, "create new post" buttton and settings -->
+
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container-fluid col-md-8">
+                <a class="navbar-brand justify-content-start"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                    </button>
+            </div>
+            <div class="collapse navbar-collapse col-md-4 justify-content-end" navbarNavDropdown>
+                <ul class="navbar-nav pe-2">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-success me-2 pb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                </li>
+                <li class="nav-item dropdown justify-content-end bg-secondary rounded-3 h-25">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"  data-bs-display="static" aria-expanded="false" >
+                        <i class="fa-solid fa-gear" style="color: #f7f7f8;"></i>        
+                    </button>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+                </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    
+<!-- Modal -->
+
+    <div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="get" target="_parent"></form>
+                    <h6>Caption:</h6>
+                    <textarea name="caption" id="" cols="64" rows="2" class="rounded-3 fw-lighter">&nbsp; Add the caption of your post here
+                    </textarea>                    
+                    <div class="modal-body m-0 p-0 mt-1">
+                        <input type="submit" name="photo" class="btn btn-light border border-secondary me-1" value="">
+                        <input type="submit" class="btn btn-light border border-secondary" value="">
+                    </div>
+
+                    <!-- Dos buttons de Fontawesome, no se pudieron linkear como inputs -->
+                    <!-- <i class="fa-solid fa-camera"></i> 
+                    <i class="fa-solid fa-location-dot"></i>-->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-success" value="Publish">
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- Center tabs with buttons that navigate to different image page views (grid and individual) -->
+
+    <div class="container">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="tab-content" id="myTabContent">
+
+<!-- Image grid view-->
+
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div>
+                <div class="container">
+                    <div class="row g-2 mb-3 pt-2">
+                        <div class="col-sm-12 col-md-6 col-lg-4 "><img class="w-100" src="https://picsum.photos/id/103/400/400" alt="First Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "> <img class="w-100" src="https://picsum.photos/id/177/400/400" alt="Second Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "><img class="w-100" src="https://picsum.photos/id/40/400/400" alt="Third Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "><img class="w-100" src="https://picsum.photos/id/28/400/400" alt="Fourth Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "> <img class="w-100" src="https://picsum.photos/id/43/400/400" alt="Fiveth Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "><img class="w-100" src="https://picsum.photos/id/76/400/400" alt="Sixth Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "><img class="w-100" src="https://picsum.photos/id/9/400/400" alt="Seventh Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "> <img class="w-100" src="https://picsum.photos/id/30/400/400" alt="Eight Photo Grid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 "><img class="w-100" src="https://picsum.photos/id/242/400/400" alt="Ninth Photo Grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Individual Image view-->
+
+
+            <div class="tab-pane fade justify-content-center" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+                <div class="container">
+                    
+                        <!-- Otra manera de como crear el header  -->
+                        <!-- <div class="row w-100 p-2">
+                            <div class="col-sm-12 col-md-6 col-lg-10 ">
+                                <h5 class="card-title">I love to rest after dinner... and my Converse!</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2 text-end">
+                                <span class="card-text fs-6 text fw-normal ms-4 ps-4 ">20/04</span>
+                            </div>
+                        </div> -->
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">I love to rest after dinner... and my Converse!</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">20/04</span> </div>                  
+                            </div>
+                            <img src="https://picsum.photos/id/103/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">54 Likes</p>
+                            <p class="card-text mb-4">One of the best moments I have at day is when I go to the park to have my "siesta".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">Not all is resting, I'm also a explorer!</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">22/04</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/177/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">102 Likes</p>
+                            <p class="card-text mb-4">I love to put my "The North Face" t-shirt and go for a trekking walk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">My cat is incredible!!</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">25/04</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/40/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">136 Likes</p>
+                            <p class="card-text mb-4">He's always waiting for me at home, I always try to bring her some field mice.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">Some green... to scape Bogota´s pollution...</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">01/05</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/28/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">189 Likes</p>
+                            <p class="card-text mb-4">Bogotá is a chaos, but have some green spaces around that are important to know to breath pure air.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">When I was in Ney York...</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">03/05</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/43/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">128 Likes</p>
+                            <p class="card-text mb-4">No, I never been there... but I love black and white photos!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">Look my awesome bike!!!!</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">10/05</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/76/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">210 Likes</p>
+                            <p class="card-text mb-4">No, it is not awesome but it is the only one I have.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">Hours and hours of coding... It never seems to stop!</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">15/05</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/9/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">54 Likes</p>
+                            <p class="card-text mb-4">But is easier with 4Geeks academy!! Make me a discount! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">Cuba, coffee and Habana pouros</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">16/05</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/30/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">54 Likes</p>
+                            <p class="card-text mb-4">Fight against the impossible and win.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4 mb-4">
+                        <div class="card w-50 h-50" style="width: 18rem;">
+                            <div class="card-head d-flex m-0 p-0">
+                                <div class="w-75 mt-3 mb-2 ps-2"> <h5 class="card-title">Barcelona</h5> </div>
+                                <div class="align-top justify-content-end ms-5 ps-5 mt-1"><span class="card-text fs-6 text fw-normal ms-3">26/05</span> </div>
+                            </div>
+                            <img src="https://picsum.photos/id/242/400/400" class="card-img-top" alt="...">
+                            <div class="card-body m-0 p-0 ps-2 pt-2">
+                            <p class="card-text fw-bold m-0">54 Likes</p>
+                            <p class="card-text mb-4">Sometimes I miss my city.... but here... women are prettier!!!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

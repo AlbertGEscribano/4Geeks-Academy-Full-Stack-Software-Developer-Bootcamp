@@ -1,0 +1,63 @@
+.litleslide {
+    width: 85%;
+    margin: auto;
+}
+
+.carousel-inner {
+    height: 15rem;
+}
+
+.title-slide {
+    font-size: 2rem;
+}
+
+.desc {
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.litleslideimg {
+    height: 15rem;
+}
+
+@media (min-width: 425px) {
+    .title-slide {
+        font-size: 2.3rem;
+    }
+
+    .desc {
+        color: #000;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .carousel-inner {
+        height: 10rem;
+    }
+
+    .litleslideimg {
+        height: 10rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .carousel-inner {
+        height: 20rem;
+    }
+
+    .litleslideimg {
+        height: 20rem;
+    }
+
+    .title-slide {
+        font-size: 2.3rem;
+    }
+
+    .desc {
+        color: #000;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}

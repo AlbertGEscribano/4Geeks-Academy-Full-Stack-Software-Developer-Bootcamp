@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://picsum.photos/id/274/1200/800);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+    height: 250px;
+}
+
+.trafficBox {
+    border: 3px solid black;
+    border-radius: 20%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.6; 
+}
+
+.trafficBox div {
+    border: 3px solid black;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.shine {
+    box-shadow: 2px 4px 40px 25px #7e5696;
+}
+
+.buttonGroup {
+    margin: inherit;
+    padding: 30px;
+    opacity: 0.6; 
+}
+
+.buttonGroup button {
+    border-radius: 10%;
+    margin: 6px;
+    border: 3px solid black;
+    background-color: white;
+    background-repeat:no-repeat;
+    
+}
+
+.purple {
+    background-color: purple;
+    box-shadow: 2px 4px 40px 25px purple;
+}

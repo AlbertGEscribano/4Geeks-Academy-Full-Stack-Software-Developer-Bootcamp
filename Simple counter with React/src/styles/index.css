@@ -1,0 +1,44 @@
+body {
+    background-image: url("https://picsum.photos/id/201/1200/800");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Counter{
+    display: flex;
+    margin-top: 80px;
+}
+
+.Counter div{
+    display: inline-block;
+    font-size: 100px;
+    line-height: 100px;
+    color: #ed281a;
+    padding: 10px;
+    margin: 4px;
+    border: 4px #ed281a solid;
+    border-radius: 6%;
+}
+
+.buttonGroup {
+    margin-top: 20px;
+    border: 4px #ed281a solid;
+    border-radius: 6%;
+}
+
+.buttonGroup button {
+    margin: 4px;
+    padding: 10px;
+    border: 4px #ed281a solid;
+    border-radius: 6%;
+    color: red;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;      
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+

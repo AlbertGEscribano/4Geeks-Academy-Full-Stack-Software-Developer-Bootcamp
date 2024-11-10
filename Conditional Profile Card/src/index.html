@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de un perfil condicional</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
+  </head>
+
+  <body>
+    <ul class="filters">
+      <li>
+        <label>Include Cover</label>
+        <select class="picker" for="includeCover">
+          <option value="">Include Cover</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </li>
+      <li>
+        <label>Name</label>
+        <input class="picker" for="name" type="text" />
+      </li>
+      <li>
+        <label>Last Name</label>
+        <input class="picker" for="lastname" type="text" />
+      </li>
+      <li>
+        <label>S.M. Position</label>
+        <select class="picker" for="socialMediaPosition">
+          <option value="position-left">Left</option>
+          <option value="position-right">Right</option>
+        </select>
+      </li>
+      <li>
+        <label>Twitter</label>
+        <input class="picker" for="twitter" type="text" />
+      </li>
+      <li>
+        <label>Github</label>
+        <input class="picker" for="github" type="text" />
+      </li>
+      <li>
+        <label>LinkedIn</label>
+        <input class="picker" for="linkedin" type="text" />
+      </li>
+      <li>
+        <label>Instagram</label>
+        <input class="picker" for="instagram" type="text" />
+      </li>
+      <li>
+        <label>Role</label>
+        <select class="picker" for="role">
+          <option value="">Pick One</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="Floor Planner">Floor Planner</option>
+          <option value="Technical Writter">Technical Writter</option>
+        </select>
+      </li>
+      <li>
+        <label>City</label>
+        <select class="picker" for="city">
+          <option value="">Pick One</option>
+          <option value="Miami">Miami</option>
+          <option value="Munich">Munich</option>
+          <option value="Caracas">Caracas</option>
+          <option value="Toronto">Toronto</option>
+        </select>
+      </li>
+      <li>
+        <label>Country</label>
+        <select class="picker" for="country">
+          <option value="">Pick One</option>
+          <option value="USA">USA</option>
+          <option value="Germany">Germany</option>
+          <option value="Canada">Canada</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
+      </li>
+    </ul>
+    <div id="widget_content">
+      <div class="widget">
+        <div class="cover">
+          <img src="https://the_url.com/for_the_background.png" />
+        </div>
+        <img src="https://the_url.com/for_the_image.png" class="photo" />
+        <h1>Ryan Boylett</h1>
+        <h2>Web Developer</h2>
+        <h3>Miami, USA</h3>
+        <ul class="position-right">
+          <li>
+            <a href="https://twitter.com/alesanchezr"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/alesanchezr"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/alesanchezr"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/alesanchezr"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- do not remove this bundle.js tag -->
+    <script type="text/javascript" src="/main.bundle.js"></script>
+  </body>
+</html>
